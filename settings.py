@@ -1,3 +1,4 @@
+import streamlit as st
 from pathlib import Path
 import sys
 
@@ -31,11 +32,14 @@ VIDEOS_DICT = {
     'video_1': VIDEO_DIR / 'video_1.mp4',
     'video_2': VIDEO_DIR / 'video_2.mp4',
     'video_3': VIDEO_DIR / 'video_3.mp4',
+    'video_4': VIDEO_DIR / 'video_4.mp4',
+    'video_5': VIDEO_DIR / 'video_5.mp4',
 }
 
 # ML Model config
 MODEL_DIR = ROOT / 'weights'
-DETECTION_MODEL = MODEL_DIR / 'yolov8n.pt'
+# DETECTION_MODEL = MODEL_DIR / 'yolov8n.pt'
+DETECTION_MODEL = MODEL_DIR / 'wrinkle_04.pt'
 # In case of your custome model comment out the line above and
 # Place your custom model pt file name at the line below 
 # DETECTION_MODEL = MODEL_DIR / 'my_detection_model.pt'
